@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/buttonStart"
+        android:layout_width="355dp"
+        android:layout_height="250dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/main_background"
+        app:layout_constraintEnd_toEndOf="@+id/main_background"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="@+id/main_background"
+        app:layout_constraintTop_toTopOf="@+id/main_background"
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/button_main_custom" />
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/seaweed_script"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_background"
+        app:layout_constraintTop_toTopOf="@+id/main_background"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ImageView
+        android:id="@+id/main_leg1"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_background"
+        app:layout_constraintEnd_toEndOf="@+id/main_background"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="@+id/main_background"
+        app:layout_constraintTop_toTopOf="@+id/main_text"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/catlegs" />
+
+    <ImageView
+        android:id="@+id/main_leg2"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_background"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="@+id/main_background"
+        app:layout_constraintTop_toTopOf="@+id/main_text"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/catlegs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

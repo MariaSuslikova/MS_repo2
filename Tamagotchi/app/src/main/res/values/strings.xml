@@ -1,0 +1,5 @@
+<resources>
+    <string name="text">MY PACK CAT</string>
+    <string name="name">Введите имя питомца</string>
+    <string name="valueofpoint">100</string>
+</resources>
